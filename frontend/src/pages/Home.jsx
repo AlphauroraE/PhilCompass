@@ -40,10 +40,6 @@ function Home() {
           ))}
         </div>
       </section>
-
-      <footer className="home-footer">
-        <p>PhilCompass - Discover Your Philosophical Alignment</p>
-      </footer>
     </div>
   );
 }
