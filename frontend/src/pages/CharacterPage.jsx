@@ -30,8 +30,11 @@ function CharacterPage() {
         }}
       >
         <div className="hero-content">
-          <div className="hero-badge" style={{ backgroundColor: 'rgba(255,255,255,0.2)' }}>
-            {group.name}
+          <div className="hero-badges">
+            <div className="hero-code">{character.code}</div>
+            <div className="hero-badge" style={{ backgroundColor: 'rgba(255,255,255,0.2)' }}>
+              {group.name}
+            </div>
           </div>
           <h1 className="hero-title">{character.name}</h1>
           <p className="hero-subtitle">{character.subtitle}</p>
@@ -113,6 +116,7 @@ function CharacterPage() {
                       </svg>
                     </div>
                     <div className="related-info">
+                      <span className="related-code">{related.code}</span>
                       <h3>{related.name}</h3>
                       <p>{related.subtitle}</p>
                     </div>

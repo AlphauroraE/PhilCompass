@@ -17,10 +17,10 @@ function Navbar() {
 
   // Group characters by their group
   const groupedCharacters = {
-    analysts: characters.filter(c => c.group === 'analysts'),
-    idealists: characters.filter(c => c.group === 'idealists'),
-    pragmatists: characters.filter(c => c.group === 'pragmatists'),
-    traditionalists: characters.filter(c => c.group === 'traditionalists')
+    go: characters.filter(c => c.group === 'go'),
+    gp: characters.filter(c => c.group === 'gp'),
+    mo: characters.filter(c => c.group === 'mo'),
+    mp: characters.filter(c => c.group === 'mp')
   };
 
   return (
@@ -67,6 +67,7 @@ function Navbar() {
                       className="dropdown-item"
                       onClick={closeMenu}
                     >
+                      <span className="dropdown-item-code">{char.code}</span>
                       {char.name}
                     </Link>
                   ))}

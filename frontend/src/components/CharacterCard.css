@@ -56,10 +56,27 @@
   gap: 12px;
 }
 
-.character-group-badge {
-  padding: 6px 16px;
-  border-radius: 20px;
+.character-badges {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.character-code-badge {
+  padding: 6px 14px;
+  border-radius: 6px;
   color: white;
+  font-size: 0.9rem;
+  font-weight: 700;
+  font-family: monospace;
+  letter-spacing: 1px;
+}
+
+.character-group-badge {
+  padding: 5px 12px;
+  border-radius: 6px;
+  background: transparent;
+  border: 2px solid;
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;

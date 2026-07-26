@@ -23,11 +23,19 @@ function CharacterCard({ character, index }) {
       </div>
 
       <div className="character-content">
-        <div
-          className="character-group-badge"
-          style={{ backgroundColor: character.color }}
-        >
-          {character.group.charAt(0).toUpperCase() + character.group.slice(1)}
+        <div className="character-badges">
+          <div
+            className="character-code-badge"
+            style={{ backgroundColor: character.color }}
+          >
+            {character.code}
+          </div>
+          <div
+            className="character-group-badge"
+            style={{ borderColor: character.color, color: character.color }}
+          >
+            {character.group.toUpperCase()}
+          </div>
         </div>
         <h2 className="character-name">{character.name}</h2>
         <p className="character-subtitle">{character.subtitle}</p>
