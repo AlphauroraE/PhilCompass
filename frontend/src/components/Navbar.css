@@ -20,19 +20,21 @@
 
 .navbar-logo {
   text-decoration: none;
-}
-
-.logo-placeholder {
-  width: 150px;
-  height: 40px;
-  background: linear-gradient(135deg, #553b6e, #c14649);
-  border-radius: 8px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  color: white;
-  font-weight: 600;
-  font-size: 18px;
+  gap: 10px;
+}
+
+.logo-icon {
+  width: 44px;
+  height: 44px;
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.5px;
 }
 
 .navbar-menu {

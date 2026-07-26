@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { characters, characterGroups } from '../data/characters';
+import logo from '../assets/logo.svg';
 import './Navbar.css';
 
 function Navbar() {
@@ -26,9 +27,8 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo" onClick={closeMenu}>
-          <div className="logo-placeholder">
-            <span>PhilCompass</span>
-          </div>
+          <img src={logo} alt="PhilCompass" className="logo-icon" />
+          <span className="logo-text">PhilCompass</span>
         </Link>
 
         <button
