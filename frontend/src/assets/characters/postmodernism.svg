@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Postmodernism - The Grand Narrative Critic: fragmented/deconstructed figure -->
+  <defs>
+    <linearGradient id="postGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c14649"/>
+      <stop offset="100%" style="stop-color:#8a3235"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="90" fill="url(#postGrad)" opacity="0.2"/>
+
+  <!-- Fragmented/deconstructed elements -->
+  <!-- Broken frame (grand narrative) -->
+  <path d="M35 40 L35 25 L50 25" fill="none" stroke="#8a3235" stroke-width="2" opacity="0.5"/>
+  <path d="M165 40 L165 25 L150 25" fill="none" stroke="#8a3235" stroke-width="2" opacity="0.5"/>
+  <path d="M35 160 L35 175 L50 175" fill="none" stroke="#8a3235" stroke-width="2" opacity="0.5"/>
+  <path d="M165 160 L165 175 L150 175" fill="none" stroke="#8a3235" stroke-width="2" opacity="0.5"/>
+
+  <!-- Scattered text fragments -->
+  <text x="40" y="55" font-family="serif" font-size="10" fill="#8a3235" opacity="0.6" transform="rotate(-15 40 55)">truth</text>
+  <text x="145" y="50" font-family="serif" font-size="10" fill="#8a3235" opacity="0.6" transform="rotate(20 145 50)">text</text>
+  <text x="50" y="165" font-family="serif" font-size="9" fill="#8a3235" opacity="0.5">meaning</text>
+
+  <!-- Figure - slightly fragmented/layered -->
+  <ellipse cx="95" cy="75" rx="20" ry="22" fill="#c14649"/>
+  <ellipse cx="105" cy="78" rx="18" ry="20" fill="#8a3235" opacity="0.5"/>
+
+  <!-- Multiple overlapping bodies (multiple interpretations) -->
+  <path d="M65 100 Q95 92 120 100 L118 155 Q95 162 68 155 Z" fill="#c14649"/>
+  <path d="M75 103 Q100 95 125 103 L122 150 Q100 157 78 150 Z" fill="#8a3235" opacity="0.4"/>
+
+  <!-- Deconstructing gesture -->
+  <path d="M118 110 L145 95 L148 100 L122 115" fill="#8a3235"/>
+
+  <!-- Broken/scattered shapes (deconstructed ideas) -->
+  <rect x="150" y="90" width="12" height="12" fill="none" stroke="#8a3235" stroke-width="2" transform="rotate(15 156 96)"/>
+  <polygon points="160,115 170,110 165,125" fill="#8a3235" opacity="0.6"/>
+
+  <!-- Plurality lines -->
+  <g stroke="#c14649" stroke-width="1" opacity="0.4">
+    <line x1="40" y1="100" x2="55" y2="105"/>
+    <line x1="40" y1="110" x2="55" y2="112"/>
+    <line x1="40" y1="120" x2="55" y2="118"/>
+  </g>
+</svg>

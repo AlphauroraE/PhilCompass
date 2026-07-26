@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Existentialism - The Authentic Self: lone figure at crossroads, choosing path -->
+  <defs>
+    <linearGradient id="existGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c14649"/>
+      <stop offset="100%" style="stop-color:#8a3235"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="90" fill="url(#existGrad)" opacity="0.2"/>
+
+  <!-- Diverging paths -->
+  <path d="M100 180 L100 130 L50 70" fill="none" stroke="#8a3235" stroke-width="3" opacity="0.5"/>
+  <path d="M100 130 L150 70" fill="none" stroke="#8a3235" stroke-width="3" opacity="0.5"/>
+  <path d="M100 130 L100 50" fill="none" stroke="#8a3235" stroke-width="3" opacity="0.5"/>
+
+  <!-- Question marks at path ends -->
+  <text x="45" y="65" font-family="serif" font-size="16" fill="#8a3235" opacity="0.6">?</text>
+  <text x="150" y="65" font-family="serif" font-size="16" fill="#8a3235" opacity="0.6">?</text>
+  <text x="97" y="45" font-family="serif" font-size="16" fill="#8a3235" opacity="0.6">?</text>
+
+  <!-- Figure at crossroads -->
+  <ellipse cx="100" cy="105" rx="22" ry="24" fill="#c14649"/>
+
+  <!-- Body standing firm -->
+  <path d="M78 130 Q100 122 122 130 L120 175 Q100 182 80 175 Z" fill="#c14649"/>
+
+  <!-- Arms in decisive gesture (choosing) -->
+  <path d="M80 138 L55 125 L58 120 L82 132" fill="#8a3235"/>
+  <path d="M120 138 L145 125 L142 120 L118 132" fill="#8a3235"/>
+
+  <!-- Pointing hand (making a choice) -->
+  <path d="M145 122 L160 115 L162 118 L148 126" fill="#8a3235"/>
+
+  <!-- Authentic self glow -->
+  <circle cx="100" cy="115" r="8" fill="#c14649" opacity="0.4"/>
+
+  <!-- Void/abyss suggestion below -->
+  <ellipse cx="100" cy="190" rx="40" ry="8" fill="#8a3235" opacity="0.3"/>
+</svg>

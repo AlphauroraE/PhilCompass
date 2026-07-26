@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Phenomenology - The Experience Explorer: eye/consciousness with radiating perception -->
+  <defs>
+    <linearGradient id="phenomGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ecd490"/>
+      <stop offset="100%" style="stop-color:#d4bc70"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="90" fill="url(#phenomGrad)" opacity="0.2"/>
+
+  <!-- Radiating perception lines -->
+  <g stroke="#c9a855" stroke-width="1.5" opacity="0.5">
+    <line x1="100" y1="25" x2="100" y2="45"/>
+    <line x1="140" y1="35" x2="130" y2="50"/>
+    <line x1="170" y1="65" x2="155" y2="75"/>
+    <line x1="60" y1="35" x2="70" y2="50"/>
+    <line x1="30" y1="65" x2="45" y2="75"/>
+  </g>
+
+  <!-- Figure head with prominent eye -->
+  <ellipse cx="100" cy="80" rx="35" ry="38" fill="#ecd490"/>
+
+  <!-- Large contemplative eye -->
+  <ellipse cx="100" cy="75" rx="22" ry="14" fill="white"/>
+  <ellipse cx="100" cy="75" rx="22" ry="14" fill="none" stroke="#c9a855" stroke-width="2"/>
+  <circle cx="100" cy="75" r="10" fill="#c9a855"/>
+  <circle cx="100" cy="75" r="5" fill="#8a7530"/>
+  <circle cx="103" cy="72" r="2" fill="white"/>
+
+  <!-- Body -->
+  <path d="M65 115 Q100 105 135 115 L140 170 Q100 180 60 170 Z" fill="#ecd490"/>
+
+  <!-- Hands reaching out to experience -->
+  <path d="M60 125 L35 110 Q30 115 35 120 L55 130" fill="#d4bc70"/>
+  <path d="M140 125 L165 110 Q170 115 165 120 L145 130" fill="#d4bc70"/>
+
+  <!-- Experience waves around hands -->
+  <path d="M25 105 Q20 115 25 125" fill="none" stroke="#c9a855" stroke-width="2" opacity="0.6"/>
+  <path d="M175 105 Q180 115 175 125" fill="none" stroke="#c9a855" stroke-width="2" opacity="0.6"/>
+</svg>

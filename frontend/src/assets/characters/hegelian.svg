@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Hegelian - The Dialectical Thinker: spiral of thesis-antithesis-synthesis -->
+  <defs>
+    <linearGradient id="hegelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c14649"/>
+      <stop offset="100%" style="stop-color:#8a3235"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="90" fill="url(#hegelGrad)" opacity="0.2"/>
+
+  <!-- Dialectical spiral -->
+  <path d="M60 160 Q40 130 60 100 Q80 70 100 70 Q120 70 140 100 Q160 130 140 160"
+        fill="none" stroke="#8a3235" stroke-width="3" opacity="0.6"/>
+  <path d="M70 145 Q55 120 75 95 Q95 70 115 95 Q135 120 120 145"
+        fill="none" stroke="#8a3235" stroke-width="2" opacity="0.5"/>
+
+  <!-- Thesis - Antithesis - Synthesis labels -->
+  <text x="45" y="170" font-family="serif" font-size="9" fill="#8a3235">thesis</text>
+  <text x="135" y="170" font-family="serif" font-size="9" fill="#8a3235">antithesis</text>
+  <text x="82" y="55" font-family="serif" font-size="10" fill="#8a3235">synthesis</text>
+
+  <!-- Arrows showing movement -->
+  <path d="M75 155 L85 145 L80 155" fill="#8a3235"/>
+  <path d="M125 155 L115 145 L120 155" fill="#8a3235"/>
+  <path d="M100 70 L95 80 L105 80" fill="#8a3235"/>
+
+  <!-- Figure at center of dialectic -->
+  <ellipse cx="100" cy="105" rx="22" ry="24" fill="#c14649"/>
+
+  <!-- Body -->
+  <path d="M78 130 Q100 122 122 130 L120 170 Q100 178 80 170 Z" fill="#c14649"/>
+
+  <!-- Arms gesturing dialectically -->
+  <path d="M80 138 L55 130 L58 125 L82 132" fill="#8a3235"/>
+  <path d="M120 138 L145 130 L142 125 L118 132" fill="#8a3235"/>
+
+  <!-- Opposing ideas in hands -->
+  <circle cx="50" cy="128" r="8" fill="#8a3235"/>
+  <circle cx="150" cy="128" r="8" fill="none" stroke="#8a3235" stroke-width="2"/>
+
+  <!-- Unity symbol above -->
+  <circle cx="100" cy="40" r="10" fill="#c14649" opacity="0.6"/>
+</svg>

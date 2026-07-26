@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Neo-Platonism - The Unity Seeker: emanating circles from The One, ascending figure -->
+  <defs>
+    <linearGradient id="neoplatGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#553b6e"/>
+      <stop offset="100%" style="stop-color:#3d2a4f"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="90" fill="url(#neoplatGrad)" opacity="0.2"/>
+
+  <!-- The One - emanating source at top -->
+  <circle cx="100" cy="30" r="15" fill="#553b6e"/>
+  <circle cx="100" cy="30" r="10" fill="#3d2a4f"/>
+  <circle cx="100" cy="30" r="5" fill="#553b6e"/>
+
+  <!-- Emanation rings -->
+  <circle cx="100" cy="30" r="25" fill="none" stroke="#553b6e" stroke-width="1.5" opacity="0.7"/>
+  <circle cx="100" cy="30" r="40" fill="none" stroke="#553b6e" stroke-width="1.5" opacity="0.5"/>
+  <circle cx="100" cy="30" r="55" fill="none" stroke="#553b6e" stroke-width="1.5" opacity="0.3"/>
+
+  <!-- Ascending figure -->
+  <ellipse cx="100" cy="110" rx="22" ry="24" fill="#553b6e"/>
+
+  <!-- Body oriented upward -->
+  <path d="M78 135 Q100 128 122 135 L118 175 Q100 182 82 175 Z" fill="#553b6e"/>
+
+  <!-- Arms raised in ascent -->
+  <path d="M80 138 L65 115 L70 112 L85 133" fill="#3d2a4f"/>
+  <path d="M120 138 L135 115 L130 112 L115 133" fill="#3d2a4f"/>
+
+  <!-- Connection line to The One -->
+  <line x1="100" y1="45" x2="100" y2="88" stroke="#3d2a4f" stroke-width="2" stroke-dasharray="4,4" opacity="0.6"/>
+
+  <!-- Soul ascending particles -->
+  <circle cx="95" cy="75" r="2" fill="#553b6e" opacity="0.6"/>
+  <circle cx="105" cy="68" r="2" fill="#553b6e" opacity="0.5"/>
+  <circle cx="100" cy="60" r="2" fill="#553b6e" opacity="0.4"/>
+
+  <!-- Beauty symbol (guide upward) -->
+  <g transform="translate(155, 100)" opacity="0.5">
+    <path d="M0 0 L-5 10 L5 10 Z" fill="#3d2a4f"/>
+    <path d="M0 -5 L-3 5 L3 5 Z" fill="#553b6e"/>
+  </g>
+</svg>

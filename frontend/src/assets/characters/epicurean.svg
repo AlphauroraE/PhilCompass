@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Epicurean - The Pleasure Philosopher: relaxed figure in garden with simple pleasures -->
+  <defs>
+    <linearGradient id="epicGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#578c5a"/>
+      <stop offset="100%" style="stop-color:#3d6940"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="90" fill="url(#epicGrad)" opacity="0.2"/>
+
+  <!-- Garden elements -->
+  <ellipse cx="40" cy="160" rx="25" ry="12" fill="#3d6940" opacity="0.5"/>
+  <ellipse cx="160" cy="155" rx="22" ry="10" fill="#3d6940" opacity="0.5"/>
+
+  <!-- Small flowers/plants -->
+  <circle cx="35" cy="150" r="5" fill="#578c5a"/>
+  <circle cx="48" cy="148" r="4" fill="#578c5a"/>
+  <circle cx="155" cy="145" r="4" fill="#578c5a"/>
+  <circle cx="168" cy="147" r="5" fill="#578c5a"/>
+
+  <!-- Reclining figure - head -->
+  <ellipse cx="70" cy="85" rx="24" ry="26" fill="#578c5a"/>
+
+  <!-- Peaceful smile -->
+  <path d="M60 90 Q70 98 80 90" fill="none" stroke="#3d6940" stroke-width="2"/>
+
+  <!-- Relaxed body reclining -->
+  <ellipse cx="115" cy="110" rx="45" ry="25" fill="#578c5a"/>
+
+  <!-- Arm relaxed with cup -->
+  <path d="M145 100 L165 95" stroke="#3d6940" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Simple cup (moderate pleasure) -->
+  <path d="M165 85 L160 105 L175 105 L170 85 Z" fill="#3d6940"/>
+
+  <!-- Other arm behind head -->
+  <path d="M55 80 Q45 65 55 55" stroke="#3d6940" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Friendship symbol - two connected figures in background -->
+  <g opacity="0.4">
+    <circle cx="165" cy="55" r="8" fill="#3d6940"/>
+    <circle cx="180" cy="55" r="8" fill="#3d6940"/>
+    <line x1="168" y1="62" x2="177" y2="62" stroke="#3d6940" stroke-width="3"/>
+  </g>
+
+  <!-- Contentment waves -->
+  <path d="M85 130 Q100 125 115 130" fill="none" stroke="#3d6940" stroke-width="1.5" opacity="0.4"/>
+  <path d="M90 138 Q100 133 110 138" fill="none" stroke="#3d6940" stroke-width="1.5" opacity="0.3"/>
+</svg>

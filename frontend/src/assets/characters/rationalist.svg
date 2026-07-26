@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Rationalism - The Reason Champion: thinking figure with geometric clarity, light of reason -->
+  <defs>
+    <linearGradient id="ratGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#553b6e"/>
+      <stop offset="100%" style="stop-color:#3d2a4f"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="90" fill="url(#ratGrad)" opacity="0.2"/>
+
+  <!-- Light of reason emanating from head -->
+  <g stroke="#553b6e" stroke-width="2" opacity="0.5">
+    <line x1="100" y1="25" x2="100" y2="40"/>
+    <line x1="75" y1="35" x2="82" y2="48"/>
+    <line x1="125" y1="35" x2="118" y2="48"/>
+    <line x1="55" y1="55" x2="68" y2="62"/>
+    <line x1="145" y1="55" x2="132" y2="62"/>
+  </g>
+
+  <!-- Figure head with "illuminated" mind -->
+  <ellipse cx="100" cy="70" rx="28" ry="30" fill="#553b6e"/>
+
+  <!-- Inner light/mind -->
+  <circle cx="100" cy="65" r="12" fill="#3d2a4f" opacity="0.5"/>
+  <circle cx="100" cy="65" r="6" fill="#553b6e"/>
+
+  <!-- Contemplative pose body -->
+  <path d="M68 102 Q100 92 132 102 L128 160 Q100 170 72 160 Z" fill="#553b6e"/>
+
+  <!-- Hand on chin (thinking) -->
+  <path d="M125 110 L140 95 L138 100 L125 115" fill="#3d2a4f"/>
+
+  <!-- Other arm with geometric proof -->
+  <path d="M75 115 L50 130" stroke="#3d2a4f" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Geometric proof/innate ideas -->
+  <g transform="translate(30, 125)">
+    <polygon points="0,30 15,0 30,30" fill="none" stroke="#3d2a4f" stroke-width="2"/>
+    <line x1="7" y1="15" x2="23" y2="15" stroke="#3d2a4f" stroke-width="1.5"/>
+    <circle cx="15" cy="20" r="3" fill="#3d2a4f"/>
+  </g>
+
+  <!-- "Cogito" thought bubble -->
+  <ellipse cx="145" cy="50" rx="22" ry="15" fill="#3d2a4f" opacity="0.7"/>
+  <text x="145" y="54" font-family="serif" font-size="10" fill="#553b6e" text-anchor="middle">cogito</text>
+  <circle cx="128" cy="65" r="4" fill="#3d2a4f" opacity="0.5"/>
+  <circle cx="122" cy="72" r="2" fill="#3d2a4f" opacity="0.4"/>
+</svg>

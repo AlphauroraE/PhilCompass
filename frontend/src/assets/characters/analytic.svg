@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Analytic Philosophy - The Precise Thinker: geometric shapes and logical symbols -->
+  <defs>
+    <linearGradient id="analyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#578c5a"/>
+      <stop offset="100%" style="stop-color:#3d6940"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="90" fill="url(#analyGrad)" opacity="0.2"/>
+
+  <!-- Figure head -->
+  <ellipse cx="100" cy="60" rx="26" ry="28" fill="#578c5a"/>
+
+  <!-- Thinking pose - hand on chin -->
+  <path d="M70 92 Q100 82 130 92 L128 150 Q100 160 72 150 Z" fill="#578c5a"/>
+
+  <!-- Arm to chin -->
+  <path d="M125 100 L140 85 L138 95 L125 108" fill="#3d6940"/>
+
+  <!-- Geometric shapes floating around (logical/analytical) -->
+  <polygon points="45,50 55,35 65,50" fill="none" stroke="#3d6940" stroke-width="2"/>
+  <rect x="145" y="40" width="18" height="18" fill="none" stroke="#3d6940" stroke-width="2"/>
+  <circle cx="160" cy="90" r="10" fill="none" stroke="#3d6940" stroke-width="2"/>
+
+  <!-- Logical symbols -->
+  <text x="35" y="95" font-family="serif" font-size="20" fill="#3d6940">∀</text>
+  <text x="155" y="130" font-family="serif" font-size="20" fill="#3d6940">∃</text>
+
+  <!-- Connection lines (logical relations) -->
+  <line x1="55" y1="55" x2="75" y2="65" stroke="#578c5a" stroke-width="1.5" opacity="0.6"/>
+  <line x1="145" y1="55" x2="125" y2="65" stroke="#578c5a" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Precise grid at bottom -->
+  <g stroke="#3d6940" stroke-width="1" opacity="0.5">
+    <line x1="60" y1="170" x2="140" y2="170"/>
+    <line x1="60" y1="180" x2="140" y2="180"/>
+    <line x1="80" y1="165" x2="80" y2="185"/>
+    <line x1="100" y1="165" x2="100" y2="185"/>
+    <line x1="120" y1="165" x2="120" y2="185"/>
+  </g>
+</svg>

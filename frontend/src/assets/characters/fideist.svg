@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Fideism - The Faith Embracer: figure with arms reaching upward, leap of faith -->
+  <defs>
+    <linearGradient id="fideGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#3d2a4f"/>
+      <stop offset="100%" style="stop-color:#553b6e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="90" fill="url(#fideGrad)" opacity="0.2"/>
+
+  <!-- Divine light from above -->
+  <g stroke="#553b6e" stroke-width="2" opacity="0.5">
+    <line x1="100" y1="10" x2="100" y2="40"/>
+    <line x1="70" y1="18" x2="80" y2="45"/>
+    <line x1="130" y1="18" x2="120" y2="45"/>
+    <line x1="50" y1="35" x2="65" y2="55"/>
+    <line x1="150" y1="35" x2="135" y2="55"/>
+  </g>
+
+  <!-- Figure head looking up -->
+  <ellipse cx="100" cy="80" rx="24" ry="26" fill="#553b6e"/>
+
+  <!-- Eyes looking up -->
+  <circle cx="92" cy="75" r="3" fill="#3d2a4f"/>
+  <circle cx="108" cy="75" r="3" fill="#3d2a4f"/>
+
+  <!-- Body -->
+  <path d="M70 108 Q100 98 130 108 L125 165 Q100 175 75 165 Z" fill="#553b6e"/>
+
+  <!-- Arms reaching upward (embracing faith) -->
+  <path d="M72 115 L45 70 L50 65 L78 108" fill="#3d2a4f"/>
+  <path d="M128 115 L155 70 L150 65 L122 108" fill="#3d2a4f"/>
+
+  <!-- Open hands reaching -->
+  <ellipse cx="42" cy="62" rx="8" ry="6" fill="#3d2a4f"/>
+  <ellipse cx="158" cy="62" rx="8" ry="6" fill="#3d2a4f"/>
+
+  <!-- Heart (faith/trust) -->
+  <path d="M100 140 L90 130 Q85 120 92 118 Q100 115 100 125 Q100 115 108 118 Q115 120 110 130 Z" fill="#3d2a4f"/>
+
+  <!-- Leap suggestion (ground breaking away) -->
+  <path d="M55 180 Q70 175 85 182" fill="none" stroke="#3d2a4f" stroke-width="2" opacity="0.4"/>
+  <path d="M115 182 Q130 175 145 180" fill="none" stroke="#3d2a4f" stroke-width="2" opacity="0.4"/>
+</svg>

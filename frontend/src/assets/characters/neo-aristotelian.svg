@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Neo-Aristotelian - The Virtue Cultivator: balanced figure with laurel -->
+  <defs>
+    <linearGradient id="aristGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ecd490"/>
+      <stop offset="100%" style="stop-color:#d4bc70"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="90" fill="url(#aristGrad)" opacity="0.2"/>
+
+  <!-- Laurel wreath left -->
+  <path d="M45 80 Q35 70 40 55 Q50 65 45 80" fill="#c9a855"/>
+  <path d="M40 95 Q28 88 30 72 Q42 82 40 95" fill="#c9a855"/>
+  <path d="M38 112 Q24 108 23 92 Q38 98 38 112" fill="#c9a855"/>
+
+  <!-- Laurel wreath right -->
+  <path d="M155 80 Q165 70 160 55 Q150 65 155 80" fill="#c9a855"/>
+  <path d="M160 95 Q172 88 170 72 Q158 82 160 95" fill="#c9a855"/>
+  <path d="M162 112 Q176 108 177 92 Q162 98 162 112" fill="#c9a855"/>
+
+  <!-- Figure head -->
+  <ellipse cx="100" cy="60" rx="28" ry="30" fill="#ecd490"/>
+
+  <!-- Balanced body in classical pose -->
+  <path d="M70 95 Q100 85 130 95 L135 155 Q100 165 65 155 Z" fill="#ecd490"/>
+
+  <!-- Arms in balanced gesture -->
+  <path d="M68 100 L45 125 L50 130 L72 108" fill="#d4bc70"/>
+  <path d="M132 100 L155 125 L150 130 L128 108" fill="#d4bc70"/>
+
+  <!-- Balance/scale symbol at bottom -->
+  <line x1="100" y1="165" x2="100" y2="185" stroke="#c9a855" stroke-width="3"/>
+  <line x1="70" y1="180" x2="130" y2="180" stroke="#c9a855" stroke-width="3"/>
+  <circle cx="70" cy="185" r="8" fill="none" stroke="#c9a855" stroke-width="2"/>
+  <circle cx="130" cy="185" r="8" fill="none" stroke="#c9a855" stroke-width="2"/>
+</svg>

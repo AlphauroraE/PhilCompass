@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Stoics - The Inner Fortress: calm meditating figure with fortress outline -->
+  <defs>
+    <linearGradient id="stoicGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ecd490"/>
+      <stop offset="100%" style="stop-color:#d4bc70"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="90" fill="url(#stoicGrad)" opacity="0.2"/>
+
+  <!-- Fortress outline around figure -->
+  <path d="M35 170 L35 80 L50 65 L50 55 L60 45 L60 55 L75 65 L75 55 L85 45 L85 55 L100 40 L115 55 L115 45 L125 55 L125 65 L140 55 L140 45 L150 55 L150 65 L165 80 L165 170"
+        fill="none" stroke="#c9a855" stroke-width="2" opacity="0.6"/>
+
+  <!-- Meditating figure - head -->
+  <ellipse cx="100" cy="75" rx="22" ry="24" fill="#ecd490"/>
+
+  <!-- Closed peaceful eyes -->
+  <path d="M88 72 Q92 75 96 72" fill="none" stroke="#c9a855" stroke-width="2"/>
+  <path d="M104 72 Q108 75 112 72" fill="none" stroke="#c9a855" stroke-width="2"/>
+
+  <!-- Serene smile -->
+  <path d="M92 82 Q100 88 108 82" fill="none" stroke="#c9a855" stroke-width="2"/>
+
+  <!-- Body in meditation pose -->
+  <ellipse cx="100" cy="125" rx="35" ry="25" fill="#ecd490"/>
+
+  <!-- Crossed legs suggestion -->
+  <ellipse cx="100" cy="155" rx="40" ry="15" fill="#d4bc70"/>
+
+  <!-- Hands in meditation mudra -->
+  <circle cx="75" cy="135" r="8" fill="#d4bc70"/>
+  <circle cx="125" cy="135" r="8" fill="#d4bc70"/>
+
+  <!-- Inner peace glow -->
+  <circle cx="100" cy="115" r="12" fill="#c9a855" opacity="0.3"/>
+  <circle cx="100" cy="115" r="6" fill="#c9a855" opacity="0.5"/>
+</svg>

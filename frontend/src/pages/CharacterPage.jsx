@@ -1,5 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import { getCharacterById, characterGroups, characters } from '../data/characters';
+import characterImages from '../assets/characters';
 import './CharacterPage.css';
 
 function CharacterPage() {
@@ -17,6 +18,7 @@ function CharacterPage() {
   }
 
   const group = characterGroups[character.group];
+  const characterImage = characterImages[character.id];
   const relatedCharacters = characters
     .filter(c => c.group === character.group && c.id !== character.id)
     .slice(0, 3);
@@ -41,10 +43,12 @@ function CharacterPage() {
         </div>
 
         <div className="hero-image">
-          <div className="image-placeholder">
-            <svg viewBox="0 0 24 24" width="80" height="80" fill="white">
-              <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-            </svg>
+          <div className="hero-image-wrapper">
+            <img
+              src={characterImage}
+              alt={character.name}
+              className="hero-character-image"
+            />
           </div>
         </div>
       </div>
@@ -107,13 +111,12 @@ function CharacterPage() {
                     className="related-card"
                     style={{ borderColor: related.color }}
                   >
-                    <div
-                      className="related-icon"
-                      style={{ backgroundColor: related.color }}
-                    >
-                      <svg viewBox="0 0 24 24" width="24" height="24" fill="white">
-                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-                      </svg>
+                    <div className="related-image-wrapper">
+                      <img
+                        src={characterImages[related.id]}
+                        alt={related.name}
+                        className="related-character-image"
+                      />
                     </div>
                     <div className="related-info">
                       <span className="related-code">{related.code}</span>

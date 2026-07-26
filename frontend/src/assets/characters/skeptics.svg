@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Skepticism - The Perpetual Questioner: figure with question marks, suspended judgment -->
+  <defs>
+    <linearGradient id="skeptGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c14649"/>
+      <stop offset="100%" style="stop-color:#8a3235"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="90" fill="url(#skeptGrad)" opacity="0.2"/>
+
+  <!-- Floating question marks -->
+  <text x="45" y="50" font-family="serif" font-size="24" fill="#8a3235" opacity="0.6">?</text>
+  <text x="145" y="45" font-family="serif" font-size="20" fill="#8a3235" opacity="0.5">?</text>
+  <text x="35" y="95" font-family="serif" font-size="18" fill="#8a3235" opacity="0.4">?</text>
+  <text x="155" y="100" font-family="serif" font-size="22" fill="#8a3235" opacity="0.5">?</text>
+  <text x="60" y="170" font-family="serif" font-size="16" fill="#8a3235" opacity="0.4">?</text>
+  <text x="130" y="175" font-family="serif" font-size="18" fill="#8a3235" opacity="0.4">?</text>
+
+  <!-- Figure head tilted (questioning) -->
+  <ellipse cx="105" cy="70" rx="24" ry="26" fill="#c14649" transform="rotate(10 105 70)"/>
+
+  <!-- Raised eyebrow expression -->
+  <path d="M95 62 Q100 58 108 62" fill="none" stroke="#8a3235" stroke-width="2"/>
+  <path d="M112 65 Q118 62 122 66" fill="none" stroke="#8a3235" stroke-width="2"/>
+
+  <!-- Body in contemplative pose -->
+  <path d="M72 98 Q100 88 128 98 L125 158 Q100 168 75 158 Z" fill="#c14649"/>
+
+  <!-- Arms crossed (withholding judgment) -->
+  <path d="M75 108 L90 125 L95 120 L82 105" fill="#8a3235"/>
+  <path d="M125 108 L110 125 L105 120 L118 105" fill="#8a3235"/>
+
+  <!-- Scales in balance (epoché - suspended judgment) -->
+  <line x1="100" y1="165" x2="100" y2="185" stroke="#8a3235" stroke-width="2"/>
+  <line x1="70" y1="182" x2="130" y2="182" stroke="#8a3235" stroke-width="2"/>
+  <line x1="70" y1="182" x2="70" y2="190" stroke="#8a3235" stroke-width="1.5"/>
+  <line x1="130" y1="182" x2="130" y2="190" stroke="#8a3235" stroke-width="1.5"/>
+
+  <!-- Equal weights (balanced/suspended) -->
+  <circle cx="70" cy="193" r="5" fill="none" stroke="#8a3235" stroke-width="1.5"/>
+  <circle cx="130" cy="193" r="5" fill="none" stroke="#8a3235" stroke-width="1.5"/>
+</svg>
