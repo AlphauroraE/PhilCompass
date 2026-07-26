@@ -1,20 +1,20 @@
-// Character image exports
-import pragmatism from './pragmatism.svg';
-import neoAristotelian from './neo-aristotelian.svg';
-import stoics from './stoics.svg';
-import phenomenology from './phenomenology.svg';
+// Character image exports - PNG hand-drawn images (except critical-theory which uses SVG)
+import pragmatism from './pragmatism.png';
+import neoAristotelian from './neo-aristotelian.png';
+import stoics from './stoics.png';
+import phenomenology from './phenomenology.png';
 import criticalTheory from './critical-theory.svg';
-import analytic from './analytic.svg';
-import empiricist from './empiricist.svg';
-import epicurean from './epicurean.svg';
-import kantian from './kantian.svg';
-import fideist from './fideist.svg';
-import neoPlatonism from './neo-platonism.svg';
-import rationalist from './rationalist.svg';
-import existentialist from './existentialist.svg';
-import postmodernism from './postmodernism.svg';
-import hegelian from './hegelian.svg';
-import skeptics from './skeptics.svg';
+import analytic from './analytic.png';
+import empiricist from './empiricist.png';
+import epicurean from './epicurean.png';
+import kantian from './kantian.png';
+import fideist from './fideist.png';
+import neoPlatonism from './neo-platonism.png';
+import rationalist from './rationalist.png';
+import existentialist from './existentialist.png';
+import postmodernism from './postmodernism.png';
+import hegelian from './hegelian.png';
+import skeptics from './skeptic.png';
 
 export const characterImages = {
   'pragmatism': pragmatism,
