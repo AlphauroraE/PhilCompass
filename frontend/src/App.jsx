@@ -6,8 +6,8 @@ import CharacterPage from './pages/CharacterPage';
 import TestPage from './pages/TestPage';
 import './App.css';
 
-// Use base path for GitHub Pages deployment
-const basename = import.meta.env.BASE_URL;
+// Use base path for GitHub Pages deployment (remove trailing slash)
+const basename = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 function App() {
   return (
