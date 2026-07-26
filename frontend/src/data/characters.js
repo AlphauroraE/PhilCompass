@@ -11,24 +11,24 @@ export const letterDimensions = {
 
 export const characterGroups = {
   go: {
-    name: "GO",
+    name: "The Sages",
     color: "#ecd490",
-    description: "Grounded and action-oriented thinkers"
+    description: "Practical wisdom, virtue, and lived experience"
   },
   gp: {
-    name: "GP",
+    name: "The Analysts",
     color: "#578c5a",
-    description: "Grounded and theory-focused thinkers"
+    description: "Systematic examination and evidence-based thinking"
   },
   mo: {
-    name: "MO",
+    name: "The Architects",
     color: "#553b6e",
-    description: "Metaphysical and contemplative thinkers"
+    description: "Foundational principles and universal truths"
   },
   mp: {
-    name: "MP",
+    name: "The Challengers",
     color: "#c14649",
-    description: "Metaphysical and praxis-oriented thinkers"
+    description: "Questioning assumptions and dialectical transformation"
   }
 };
 
@@ -141,19 +141,19 @@ export const characters = [
     philosophers: ["Epicurus", "Lucretius", "Philodemus", "Pierre Gassendi"]
   },
 
-  // Purple (MO) - Hegelian, Fideist, Neo-Platonism, Rationalist
+  // Purple (MO) - Kantian, Fideist, Neo-Platonism, Rationalist
   {
-    id: "hegelian",
-    name: "Hegelian",
-    code: "CRIT",
-    subtitle: "The Dialectical Thinker",
+    id: "kantian",
+    name: "Kantian",
+    code: "CDIT",
+    subtitle: "The Duty Defender",
     group: "mo",
     color: "#553b6e",
-    shortDescription: "Understands reality as the unfolding of Spirit through dialectical development and historical progress.",
-    fullDescription: "Hegelianism sees reality as the self-development of Absolute Spirit through dialectical process. History, thought, and nature unfold through the movement of thesis, antithesis, and synthesis, with contradictions driving progress toward greater rationality and freedom. Nothing can be understood in isolation; everything must be grasped in relation to the whole. This critical, realist approach focuses on internal theoretical understanding of how reality develops through contradiction.",
-    strengths: ["Systematic thinking", "Historical understanding", "Dialectical reasoning", "Holistic vision"],
-    challenges: ["Can be obscure", "May seem deterministic", "Might justify status quo"],
-    philosophers: ["G.W.F. Hegel", "F.H. Bradley", "Slavoj Žižek", "Robert Brandom"]
+    shortDescription: "Grounds morality in rational duty and universal principles that respect human dignity and autonomy.",
+    fullDescription: "Kantianism holds that morality is grounded in rational principles that apply universally to all rational beings. The categorical imperative commands us to act only according to principles we could will to be universal laws, and to treat humanity never merely as means but always as ends. Rights and dignity are absolute, grounded in rational autonomy. This critical, idealist approach emphasizes internal theoretical reflection on the structure of moral reason.",
+    strengths: ["Principled action", "Respect for dignity", "Universal ethics", "Rational foundation"],
+    challenges: ["May seem rigid", "Can ignore consequences", "Might face conflicting duties"],
+    philosophers: ["Immanuel Kant", "Christine Korsgaard", "Onora O'Neill", "John Rawls"]
   },
   {
     id: "fideist",
@@ -195,7 +195,7 @@ export const characters = [
     philosophers: ["René Descartes", "Baruch Spinoza", "Gottfried Leibniz", "Christian Wolff"]
   },
 
-  // Red (MP) - Existentialist, Postmodernism, Kantian, Skeptics
+  // Red (MP) - Existentialist, Postmodernism, Hegelian, Skeptics
   {
     id: "existentialist",
     name: "Existentialism",
@@ -223,17 +223,17 @@ export const characters = [
     philosophers: ["Jacques Derrida", "Michel Foucault", "Jean-François Lyotard", "Judith Butler"]
   },
   {
-    id: "kantian",
-    name: "Kantian",
-    code: "CDIT",
-    subtitle: "The Duty Defender",
+    id: "hegelian",
+    name: "Hegelian",
+    code: "CRIT",
+    subtitle: "The Dialectical Thinker",
     group: "mp",
     color: "#c14649",
-    shortDescription: "Grounds morality in rational duty and universal principles that respect human dignity and autonomy.",
-    fullDescription: "Kantianism holds that morality is grounded in rational principles that apply universally to all rational beings. The categorical imperative commands us to act only according to principles we could will to be universal laws, and to treat humanity never merely as means but always as ends. Rights and dignity are absolute, grounded in rational autonomy. This critical, idealist approach emphasizes internal theoretical reflection on the structure of moral reason.",
-    strengths: ["Principled action", "Respect for dignity", "Universal ethics", "Rational foundation"],
-    challenges: ["May seem rigid", "Can ignore consequences", "Might face conflicting duties"],
-    philosophers: ["Immanuel Kant", "Christine Korsgaard", "Onora O'Neill", "John Rawls"]
+    shortDescription: "Understands reality as the unfolding of Spirit through dialectical development and historical progress.",
+    fullDescription: "Hegelianism sees reality as the self-development of Absolute Spirit through dialectical process. History, thought, and nature unfold through the movement of thesis, antithesis, and synthesis, with contradictions driving progress toward greater rationality and freedom. Nothing can be understood in isolation; everything must be grasped in relation to the whole. This critical, realist approach focuses on internal theoretical understanding of how reality develops through contradiction.",
+    strengths: ["Systematic thinking", "Historical understanding", "Dialectical reasoning", "Holistic vision"],
+    challenges: ["Can be obscure", "May seem deterministic", "Might justify status quo"],
+    philosophers: ["G.W.F. Hegel", "F.H. Bradley", "Slavoj Žižek", "Robert Brandom"]
   },
   {
     id: "skeptics",
