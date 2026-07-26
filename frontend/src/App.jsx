@@ -6,9 +6,12 @@ import CharacterPage from './pages/CharacterPage';
 import TestPage from './pages/TestPage';
 import './App.css';
 
+// Use base path for GitHub Pages deployment
+const basename = import.meta.env.BASE_URL;
+
 function App() {
   return (
-    <Router>
+    <Router basename={basename}>
       <div className="app">
         <Navbar />
         <main className="main-content">
