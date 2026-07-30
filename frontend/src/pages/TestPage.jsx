@@ -248,32 +248,28 @@ function TestPage() {
                   rightLabel="Naive"
                   leftScore={result.scores.C}
                   rightScore={result.scores.N}
-                  leftColor="#553b6e"
-                  rightColor="#ecd490"
+                  color={result.character.color}
                 />
                 <DimensionBar
                   leftLabel="Idealist"
                   rightLabel="Realist"
                   leftScore={result.scores.D}
                   rightScore={result.scores.R}
-                  leftColor="#c14649"
-                  rightColor="#578c5a"
+                  color={result.character.color}
                 />
                 <DimensionBar
                   leftLabel="External"
                   rightLabel="Internal"
                   leftScore={result.scores.E}
                   rightScore={result.scores.I}
-                  leftColor="#578c5a"
-                  rightColor="#553b6e"
+                  color={result.character.color}
                 />
                 <DimensionBar
                   leftLabel="Act"
                   rightLabel="Theory"
                   leftScore={result.scores.A}
                   rightScore={result.scores.T}
-                  leftColor="#c14649"
-                  rightColor="#ecd490"
+                  color={result.character.color}
                 />
               </div>
             </div>
@@ -363,9 +359,10 @@ function TestPage() {
   );
 }
 
-function DimensionBar({ leftLabel, rightLabel, leftScore, rightScore, leftColor, rightColor }) {
+function DimensionBar({ leftLabel, rightLabel, leftScore, rightScore, color }) {
   // Determine which side "won"
   const leftWon = leftScore > rightScore;
+  const isTie = leftScore === rightScore;
 
   // Calculate percentages based on the difference
   const diff = Math.abs(leftScore - rightScore);
@@ -375,7 +372,7 @@ function DimensionBar({ leftLabel, rightLabel, leftScore, rightScore, leftColor,
   const dominance = Math.min(diff / (maxPossible * 2), 0.45);
 
   let leftPercent, rightPercent;
-  if (leftScore === rightScore) {
+  if (isTie) {
     leftPercent = 50;
     rightPercent = 50;
   } else if (leftWon) {
@@ -398,10 +395,16 @@ function DimensionBar({ leftLabel, rightLabel, leftScore, rightScore, leftColor,
   // (closer to the left/winning side)
   const meetingPosition = rightPercent;
 
+  // Create a lighter version of the color for the losing side
+  const lighterColor = color + '40'; // 40 is hex for ~25% opacity
+
   return (
     <div className="dimension-bar">
       <div className="dimension-row">
-        <span className={`dimension-label left ${leftWon ? 'winner' : ''}`}>
+        <span
+          className={`dimension-label left ${leftWon && !isTie ? 'winner' : ''}`}
+          style={leftWon && !isTie ? { borderColor: color } : {}}
+        >
           {leftLabel}
         </span>
         <div className="bar-container">
@@ -409,7 +412,7 @@ function DimensionBar({ leftLabel, rightLabel, leftScore, rightScore, leftColor,
             className="bar-left"
             style={{
               width: `${meetingPosition}%`,
-              backgroundColor: leftColor
+              backgroundColor: leftWon ? color : lighterColor
             }}
           />
           <div
@@ -419,17 +422,20 @@ function DimensionBar({ leftLabel, rightLabel, leftScore, rightScore, leftColor,
             <span className="percentage-display">
               {leftDisplay}% | {rightDisplay}%
             </span>
-            <div className="meeting-circle" />
+            <div className="meeting-circle" style={{ borderColor: color }} />
           </div>
           <div
             className="bar-right"
             style={{
               width: `${leftPercent}%`,
-              backgroundColor: rightColor
+              backgroundColor: !leftWon ? color : lighterColor
             }}
           />
         </div>
-        <span className={`dimension-label right ${!leftWon ? 'winner' : ''}`}>
+        <span
+          className={`dimension-label right ${!leftWon && !isTie ? 'winner' : ''}`}
+          style={!leftWon && !isTie ? { borderColor: color } : {}}
+        >
           {rightLabel}
         </span>
       </div>
